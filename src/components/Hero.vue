@@ -1,7 +1,7 @@
 <template>
 <section class="hero hero-bg is-fullheight-with-navbar">
 <div class="hero-body">
-    <div class="container has-text-centered">
+    <div class="container is-max-desktop has-text-centered">
       <p class="title">
         Meditations Helps You Detoxify Your Body
       </p>

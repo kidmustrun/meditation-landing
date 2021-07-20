@@ -2,7 +2,7 @@
   <header>
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="#">
+    <a class="navbar-item logo" href="#">
       <img src="../assets/img/logo.svg" alt="logo">
     </a>
 
@@ -56,19 +56,20 @@ header{
   padding: 0 3.25rem 0 3.25rem !important
 }
 }
-
 .navbar-item img {
   height: 3.25rem !important;
-
 }
 .navbar-item{
   position: relative;
+  transition: 0.2s ease;
 }
 .navbar-item:hover{
   background-color: transparent !important;
   color: #1A7F72 !important;
+  transition: 0.2s ease;
 }
-.navbar-item:hover::before {
+.navbar-item::before {
+  opacity: 0;
   position: absolute;
   content: "";
   width: 100%;
@@ -76,5 +77,13 @@ header{
   bottom: 0;
   left:0;
   border-radius: 10px 10px 0 0;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -ms-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition:  opacity 0.2s ease;
+}
+.navbar-item:hover:not(.logo)::before {
+  opacity: 1;
 }
 </style>
