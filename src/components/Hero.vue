@@ -8,7 +8,7 @@
       <p class="subtitle">
         “It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout point of using Lorem Ipsum is that it has a more-or-less.”
       </p>
-      <button class="button is-rounded button-getstart">Get Start</button>
+      <Button button-text="Get Start"/>
       <div class="hero-image">
       <img src="../assets/img/hero-image.svg" alt="Meditation Girl">
       </div>
@@ -18,8 +18,15 @@
 </template>
 
 <script>
+import Button from './Button.vue'
 export default {
-  name: 'Hero'
+  name: 'Hero',
+  components: {
+    Button
+  },
+  props: [
+    'buttonText'
+  ]
 }
 </script>
 <style>
@@ -32,12 +39,6 @@ export default {
 }
 .subtitle{
     color: rgba(0, 0, 0, 0.5) !important;
-}
-.button-getstart{
-    background-color: rgba(37, 147, 133, 1) !important;
-    border: transparent !important;
-    color: #fff !important;
-    padding: 0 3rem 0 3rem !important;
 }
 .hero-image img{
     height: 50vh;
