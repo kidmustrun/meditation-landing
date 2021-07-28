@@ -1,6 +1,6 @@
 <template>
       <div class="box">
-          <div class="columns">
+          <div class="columns is-mobile">
               <div class="column is-three-quarters">
 <strong>{{ soundTitle }}</strong><br>
             <p> {{ soundDesc }} </p>
