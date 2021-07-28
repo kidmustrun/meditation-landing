@@ -2,7 +2,7 @@
 <section class="hero hero-bg is-fullheight-with-navbar">
 <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
-      <p class="title">
+      <p class="title title-hero">
         Meditations Helps You Detoxify Your Body
       </p>
       <p class="subtitle">
@@ -34,8 +34,10 @@ export default {
     background: url("../assets/img/hero-bg.svg") bottom;
 }
 .title{
-    font-family: 'Merienda One', cursive !important;
-    color: #fff !important;
+    font-family: 'Merienda One', cursive !important;  
+}
+.title-hero{
+color: #fff !important;
 }
 .subtitle{
     color: rgba(0, 0, 0, 0.5) !important;
