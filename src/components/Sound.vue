@@ -1,5 +1,5 @@
 <template>
-      <div class="box">
+      <div class="box sound-box">
           <div class="columns is-mobile">
               <div class="column is-three-quarters">
 <strong>{{ soundTitle }}</strong><br>
@@ -56,7 +56,7 @@ soundClick() {
 }
 </script>
 <style>
-.box{
+.sound-box{
     background: linear-gradient(90deg, #C3E2DE 27.22%, #CFF1ED 48.89%, #EDFBF9 96.77%) !important;
     border-radius: 15px !important;
     box-shadow: none;
@@ -72,6 +72,7 @@ soundClick() {
     border: none;
     color: #fff;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 .sound-button:hover{
     opacity: 1;

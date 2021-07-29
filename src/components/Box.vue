@@ -17,7 +17,6 @@ export default {
 <style>
 .box{
     background-color: rgba(255, 255, 255, 0.5) !important;
-    cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 .box:hover{

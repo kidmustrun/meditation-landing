@@ -16,6 +16,7 @@
   </div>
   </div>
     <Info/>
+    <Footer/>
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
 import Card from './components/Card.vue'
 import Info from './components/Info.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
@@ -31,7 +33,8 @@ export default {
     Header,
     Hero,
     Card,
-    Info
+    Info,
+    Footer
   },
     props: [
     'imageTitle',
@@ -48,6 +51,7 @@ export default {
 }
 html{
   background-color: rgba(230, 248, 245, 1) !important;
+  scroll-behavior: smooth;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
